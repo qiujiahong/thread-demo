@@ -32,3 +32,14 @@ thread pool通过事先创建线程，执行任务，通常是解决线程循环
 1.  完整代码
   * [Task.java](/src/main/java/org/nick/threadpooldemo/simple/Task.java)
   * [Test.java](/src/main/java/org/nick/threadpooldemo/simple/Test.java)
+
+
+![](./assets/2018-09-23-08-16-48.png)
+
+可以看到线程1、2、3立即执行，4、5待线程1、2、3执行完毕之后继续执行；
+
+### 使用线程池的风险
+
+* Deadlock 
+* Thread Leakage 
+* Resource Thrashing 
